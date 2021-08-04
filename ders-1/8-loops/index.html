@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .uncompleted-item {
+        background-color: #dc354536;
+      }
+      .completed-item {
+        background-color: #19875440;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 p-2">
+            <h3 class="text-center">Todo List</h3>
+            <div class="d-flex justify-content-star mb-4">
+              <input type="text" class="form-control me-2" @keydown.enter="addTodo" />
+            </div>
+            <div v-if="todoList.length > 0">
+              <ul class="list-group">
+                <li
+                  v-for="todo in todoList"
+                  :key="todo.id"
+                  :class="{ 'completed-item' : todo.completed, 'uncompleted-item' : !todo.completed }"
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <input class="form-check-input" type="checkbox" v-model="todo.completed" :id="`completed_checkbox_${todo.id}`" />
+                    <label class="form-check-label ms-2" :for="`completed_checkbox_${todo.id}`"> {{ todo.text }} </label>
+                  </div>
+                  <button class="btn btn-danger btn-sm" @click="removeItem(todo)">Sil</button>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-success"> Tamamlanmış item sayısı :{{ completedItemCount }} </small>
+                <small class="text-danger"> Tamamlanmamış item sayısı :{{ unCompletedItemCount }} </small>
+              </div>
+            </div>
+
+            <div v-else class="alert alert-warning">Henüz eklenmiş bir todo bulunmamaktadır.</div>
+          </div>
+          <div class="col-4">
+            <pre> {{ todoList }} </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

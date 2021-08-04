@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ödev 2 | Event</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Ödev 2 | Events</header>
+    <div class="container" id="exercise">
+      <div class="card text-center">
+        <!-- 1) Butona tıklanıldığında bir alert kutusu çıkartınız -->
+        <div class="mb-10">
+          <button @click="showAlert">Alert Göster</button>
+        </div>
+        <!-- 2) "keydown" event'ini dinleyerek value değişkeni içerisinde yazdığınız veriyi saklayın. (ipucu: event.target.value size yazdığınız değeri verebilir.) -->
+        <div class="mb-10">
+          <!-- <input @keyup="valueUpdated" type="text" /> -->
+          <input @keyup="value = $event.target.value" type="text" />
+          <p>{{ value }}</p>
+        </div>
+        <!-- 3) 2.Uygulamayı düzenleyerek eğer keydown ENTER ise yazdığınız verinin value değerine aktarılmasını sağlayın -->
+        <div>
+          <input @keydown.enter="value = $event.target.value" type="text" />
+          <p>{{ value }}</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

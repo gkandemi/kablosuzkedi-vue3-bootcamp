@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Instance</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px dashed #c5161c;
+        background-color: #ccc;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Bu HTML üzerinden yazılan statik bir başlık..</h1>
+      <h1>{{ title }}</h1>
+      <p>{{ content }}</p>
+      <p>{{ hobbies[0] }}</p>
+      <p>{{ personal.name }} </p>
+      <div v-html="details"></div>
+      <a v-bind:href="url" v-bind:masa="masa">URL Test</a>
+      <a :href="url" :masa="masa">URL Test</a>
+      <br /><br />
+      <button v-on:click="updateTitle('Bu da başlığı değiştirir..')">
+        Tıkla ve Title Bilgisini Değiştir...
+      </button>
+      <button @click="updateTitle('Kardeşim bu benim parametremm..')">
+        Tıkla ve Title Bilgisini Değiştir...
+      </button>
+      <br />
+      <br />
+      <div
+        class="box"
+        @mousemove="updateCoords"
+        @click="updateTitle('Div üzerinden gelen mesaj..')"
+      >
+        {{ coordX }}, {{ coordY }}
+      </div>
+
+      <br /><br />
+
+      <input
+        type="text"
+        :value="fullName"
+        @input="fullName = $event.target.value"
+      />
+      <input type="text" v-model="fullName" />
+      <!-- @input="updateValue('bu benim text', $event)" -->
+      {{ fullName }}
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

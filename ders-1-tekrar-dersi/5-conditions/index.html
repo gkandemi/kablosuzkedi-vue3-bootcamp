@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koşullar</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container text-center">
+        <h3 class="text-green" v-if="showState">Gösterilecek başlık...</h3>
+        <div class="text-red" v-else">Gizlenen başlık...</div>
+        <button @click="showState = !showState">Göster / Gizle</button>
+      </div>
+
+      <div class="container text-center">
+        <h3 class="text-green" v-show="showState">Gösterilecek başlık...</h3>
+        <p class="text-red" v-show="!showState">Gizlenen başlık...</p>
+        <button @click="showState = !showState">Göster / Gizle</button>
+      </div>
+
+      <div class="container-sm text-center">
+
+        <h3 class="text-red" v-if="counter < 0">Negatif.</h3>
+        <h3 class="text-green" v-else-if="counter > 0">Pozitif</h3>
+        <h3 class="text-default" v-else>Sıfır</h3>
+
+        <button class="green mr-2" @click="counter++">Artır</button>
+        <button class="red" @click="counter--">Azalt</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

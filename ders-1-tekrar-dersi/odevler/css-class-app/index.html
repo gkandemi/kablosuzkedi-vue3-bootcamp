@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Class App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <style>
+      .red-box {
+        background-color: brown !important;
+      }
+      .green-box {
+        background-color: green !important;
+      }
+      .blue-box {
+        background-color: blue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header>CSS Class App</header>
+    <div id="app" class="container css--class--app">
+      <div class="card text-center">
+        <ul class="css--palette text-center">
+          <li :class="{ [color.css_class] : true}" v-for="color in color_palette" :key="color.id" @click="activeColor = color.css_class"></li>
+        </ul>
+        <div class="result-box" :class="{ [activeColor] : true }"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

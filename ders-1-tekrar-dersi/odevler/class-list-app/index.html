@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Class List App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <style>
+      .backgroundColor {
+        background-color: #c5161c;
+      }
+      .border {
+        border: 2px solid #c5161c;
+      }
+      .borderRadius {
+        border-radius: 5px;
+      }
+      .color {
+        color: #c5161c;
+      }
+      .fontBold {
+        font-weight: bold;
+      }
+      .fontItalic {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Class List App</header>
+    <div id="app" class="container">
+      <div class="class--list--app">
+        <div class="card">
+          <ul class="class-list">
+            <li>
+              <label>
+                <input
+                  v-model="styles.backgroundColor"
+                  class="mr-5"
+                  type="checkbox"
+                />
+                <span>Background Color</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input v-model="styles.border" class="mr-5" type="checkbox" />
+                <span>Border</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input
+                  v-model="styles.borderRadius"
+                  class="mr-5"
+                  type="checkbox"
+                />
+                <span>Border Radius</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input v-model="styles.color" class="mr-5" type="checkbox" />
+                <span>Color</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input v-model="styles.fontBold" class="mr-5" type="checkbox" />
+                <span>Font Bold</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input
+                  v-model="styles.fontItalic"
+                  class="mr-5"
+                  type="checkbox"
+                />
+                <span>Font Italic</span>
+              </label>
+            </li>
+          </ul>
+
+          <textarea :class="textAreaClass" rows="5"></textarea>
+        </div>
+      </div>
+
+      <pre>
+        {{ styles }}
+      </pre>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

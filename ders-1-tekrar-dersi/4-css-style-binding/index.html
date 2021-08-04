@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS ve Style Binding</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h3 :class="boxClass" class="mb-2">CSS ve Style Binding</h3>
+        <p :style="{ color : '#c5161c', backgroundColor : 'black'}">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi,
+          autem quae. Similique molestias, provident autem officia ex rem nemo
+          non voluptates corporis voluptatibus aut animi dicta tempore. Eos, cum
+          recusandae!
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
