@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .translate {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@layer components {
+  .like-btn {
+    @apply flex-shrink-0 w-10 h-10 p-2 flex rounded-md hover:bg-indigo-300 justify-center items-center;
+  }
+  .bookmark-btn {
+    @apply flex-shrink-0 w-10 h-10 p-2 flex rounded-md hover:bg-black justify-center items-center;
+  }
+  .bookmark-item-active {
+    @apply text-red-700;
+  }
+  .details-btn {
+    @apply flex-shrink-0 w-10 h-10 p-2 flex rounded-md hover:bg-gray-200 group-focus-within:bg-gray-300 justify-center items-center;
+  }
+
+  .sidebar {
+    @apply flex flex-shrink-0 flex-col h-[100vh] bg-white w-60 border-gray-200 border-r-[1px];
+  }
+
+  .details-container {
+    @apply absolute !z-10 w-60 h-40 group-focus-within:visible right-0 top-full overflow-y-scroll group-hover:visible bg-white invisible rounded-md shadow-lg p-3 text-left border-gray-300 border-[1px];
+  }
+
+  .header-container {
+    @apply bg-white border-gray-200 border-b-[1px] h-16 w-full flex items-center justify-center;
+  }
+
+  .navbar-item {
+    @apply rounded-lg shadow-md border-[1px] p-2 border-gray-500 hover:bg-black hover:text-white transition-colors;
+  }
+  .menu-item {
+    @apply p-2 flex hover:bg-black hover:text-white rounded-md;
+  }
+
+  .sidebar-item {
+    @apply flex bg-white p-2 text-gray-500 px-2 py-3 hover:bg-black hover:text-white;
+  }
+
+  .login_register_container {
+    @apply bg-white rounded-md border-[1px] border-gray-300 w-1/4 md:w-1/2 m-auto absolute top-1/2 left-1/2 translate p-3 flex flex-col shadow-md;
+  }
+
+  .input {
+    @apply px-3 py-2 border rounded-sm border-gray-300 outline-none focus:border-black;
+  }
+
+  .default-button {
+    @apply bg-gray-700 p-2 text-white rounded-md hover:bg-black;
+  }
+
+  .secondary-button {
+    @apply bg-gray-500 p-2 text-white rounded-md hover:bg-gray-600;
+  }
+
+  .primary-button {
+    @apply bg-indigo-500 p-2 text-white rounded-md hover:bg-black;
+  }
+
+  .danger-button {
+    @apply bg-red-500 p-2 text-white rounded-md hover:bg-black;
+  }
+}

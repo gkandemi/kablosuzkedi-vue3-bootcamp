@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "username": "gkandemir",
+            "fullname": "Gökhan Kandemir",
+            "password": "79a0af24ff17bb7a8a4a1176de203d9f566ee17d",
+            "id": 1
+        },
+        {
+            "username": "prototurk",
+            "fullname": "Tayfun Erbilen",
+            "password": "79a0af24ff17bb7a8a4a1176de203d9f566ee17d",
+            "id": 2
+        }
+    ],
+    "bookmarks": [],
+    "categories": []
+}
