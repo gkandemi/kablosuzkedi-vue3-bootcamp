@@ -607,6 +607,13 @@ video {
   background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
 }
 
+.like-item-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(55, 48, 163, var(--tw-text-opacity));
+}
+
 .bookmark-btn {
   display: flex;
   height: 2.5rem;
@@ -620,12 +627,14 @@ video {
 
 .bookmark-btn:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
 }
 
 .bookmark-item-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(185, 28, 28, var(--tw-text-opacity));
+  color: rgba(153, 27, 27, var(--tw-text-opacity));
 }
 
 .details-btn {
@@ -763,7 +772,7 @@ video {
   left: 50%;
   margin: auto;
   display: flex;
-  width: 25%;
+  width: 91.666667%;
   transform: translate(-50%, -50%);
   flex-direction: column;
   border-radius: 0.375rem;
@@ -777,9 +786,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .login_register_container {
     width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .login_register_container {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login_register_container {
+    width: 25%;
   }
 }
 
@@ -1203,4 +1224,34 @@ video {
 .group:hover .group-hover\:text-gray-700 {
   --tw-text-opacity: 1;
   color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
 }

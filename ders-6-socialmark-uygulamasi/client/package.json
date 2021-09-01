@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "crypto-js": "^4.1.1",
     "secure-ls": "^1.2.6",
+    "socket.io-client": "^4.2.0",
     "vue": "^3.0.0",
     "vue-router": "4",
     "vuex": "^4.0.2",
