@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply bg-gray-800 outline-none px-2 py-1 text-sm rounded-md text-gray-400 focus:bg-gray-700;
+  }
+  .delete-button {
+    @apply outline-none hover:text-gray-100 text-gray-400;
+  }
+
+  .add-item-button {
+    @apply outline-none flex bg-gray-800 w-full px-2 py-2 rounded-full items-center justify-center text-purple-600 hover:bg-gray-700 active:bg-gray-900;
+  }
+
+  .purple-button {
+    @apply outline-none bg-indigo-600 p-2 rounded-md hover:bg-indigo-500 active:bg-indigo-700;
+  }
+
+  .danger-button {
+    @apply outline-none bg-red-600 p-2 rounded-md hover:bg-red-500 active:bg-red-700;
+  }
+
+  .table-body-item {
+    @apply flex items-center mb-1 border-b border-gray-800 p-1;
+  }
+}
