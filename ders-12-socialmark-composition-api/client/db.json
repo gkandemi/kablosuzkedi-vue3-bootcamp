@@ -1,0 +1,390 @@
+{
+  "users": [
+    {
+      "username": "gkandemir",
+      "fullname": "Gökhan Kandemir",
+      "password": "79a0af24ff17bb7a8a4a1176de203d9f566ee17d",
+      "id": 1
+    },
+    {
+      "username": "prototurk",
+      "fullname": "Tayfun Erbilen",
+      "password": "79a0af24ff17bb7a8a4a1176de203d9f566ee17d",
+      "id": 2
+    },
+    {
+      "username": "kablosuzbeyin",
+      "fullname": "Ramazan Sancar",
+      "password": "79a0af24ff17bb7a8a4a1176de203d9f566ee17d",
+      "id": 3
+    },
+    {
+      "username": "felo",
+      "fullname": "felakettin",
+      "password": "8fd84c94c8fe7e2b09a30501fd2b1c8b2aaefdd7",
+      "id": 4
+    }
+  ],
+  "user_likes": [
+    {
+      "userId": 1,
+      "bookmarkId": 1,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "bookmarkId": 6,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "bookmarkId": 16,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 9,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 3,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 20,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 19,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 13,
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 11,
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 12,
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 10,
+      "id": 13
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 18,
+      "id": 14
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 5,
+      "id": 15
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 4,
+      "id": 16
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 17,
+      "id": 17
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 15,
+      "id": 18
+    }
+  ],
+  "user_bookmarks": [
+    {
+      "userId": 1,
+      "bookmarkId": 6,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "bookmarkId": 16,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 8,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 7,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 2,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 19,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 13,
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 11,
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 12,
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 14,
+      "id": 13
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 17,
+      "id": 14
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 5,
+      "id": 15
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 4,
+      "id": 16
+    },
+    {
+      "userId": 4,
+      "bookmarkId": 3,
+      "id": 17
+    }
+  ],
+  "bookmarks": [
+    {
+      "title": "Vue Docs",
+      "url": "https://v3.vuejs.org",
+      "categoryId": 1,
+      "description": "Dünyanın en güzel framework'ü",
+      "userId": 1,
+      "created_at": "2021-08-26T18:57:24.821Z",
+      "id": 1
+    },
+    {
+      "title": "Frontend Masters",
+      "url": "http://...",
+      "categoryId": 3,
+      "description": "Çok güzel bir kaynak..",
+      "userId": 1,
+      "created_at": "2021-08-26T19:00:35.404Z",
+      "id": 2
+    },
+    {
+      "title": "AWS",
+      "url": "https:///aws",
+      "categoryId": 5,
+      "description": "çok güzel",
+      "userId": 1,
+      "created_at": "2021-08-26T19:01:12.447Z",
+      "id": 3
+    },
+    {
+      "title": "Güzel Müzikler",
+      "url": "https://...",
+      "categoryId": 6,
+      "description": "çok güzel müzikler ama gerçekten çok güzel..",
+      "userId": 1,
+      "created_at": "2021-08-26T19:11:23.114Z",
+      "id": 4
+    },
+    {
+      "title": "Prototurk",
+      "url": "https://prototurk.com",
+      "categoryId": 4,
+      "description": "Türkiyenin StackOverflow'u olacak bir sayfa.",
+      "userId": 2,
+      "created_at": "2021-08-26T19:43:24.698Z",
+      "id": 5
+    },
+    {
+      "title": "Marvel Filmleri",
+      "url": "httpa://...",
+      "categoryId": 6,
+      "description": "bu serinin tamamını kesinlikle izle.",
+      "userId": 1,
+      "created_at": "2021-08-26T20:03:34.015Z",
+      "id": 6
+    },
+    {
+      "title": "Kablosuz Beyin",
+      "url": "https://kablosuzbeyin.com",
+      "categoryId": 6,
+      "description": "Kablosuz Beyin etkinlikler için..",
+      "userId": 1,
+      "created_at": "2021-08-26T20:04:14.248Z",
+      "id": 7
+    },
+    {
+      "title": "Yeni Yer İmi",
+      "url": "http://....",
+      "categoryId": 2,
+      "description": "aaaaa",
+      "userId": 1,
+      "created_at": "2021-09-01T18:31:14.532Z",
+      "id": 8
+    },
+    {
+      "title": "tttt",
+      "url": "aaaaa",
+      "categoryId": 4,
+      "description": "ssssss",
+      "userId": 1,
+      "created_at": "2021-09-01T18:35:59.811Z",
+      "id": 9
+    },
+    {
+      "title": "TestS",
+      "url": "http://...",
+      "categoryId": 1,
+      "description": "aaaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:37:57.630Z",
+      "id": 10
+    },
+    {
+      "title": "denem",
+      "url": "http",
+      "categoryId": 2,
+      "description": "asdadasdad",
+      "userId": 1,
+      "created_at": "2021-09-01T18:41:07.474Z",
+      "id": 11
+    },
+    {
+      "title": "New Test",
+      "url": "http://",
+      "categoryId": 2,
+      "description": "aaaaaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:45:30.984Z",
+      "id": 12
+    },
+    {
+      "title": "Deneme",
+      "url": "http://",
+      "categoryId": 1,
+      "description": "aaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:45:53.053Z",
+      "id": 13
+    },
+    {
+      "title": "yen",
+      "url": "aaa",
+      "categoryId": 1,
+      "description": "sdfsdf",
+      "userId": 1,
+      "created_at": "2021-09-01T18:46:51.308Z",
+      "id": 14
+    },
+    {
+      "title": "deneme",
+      "url": "aaaaa",
+      "categoryId": 3,
+      "description": "asdasd",
+      "userId": 1,
+      "created_at": "2021-09-01T18:51:28.380Z",
+      "id": 15
+    },
+    {
+      "title": "Can Sarıgöl Oyun",
+      "url": "178....",
+      "categoryId": 1,
+      "description": "aaaaaaaaaaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:52:14.559Z",
+      "id": 16
+    },
+    {
+      "title": "aaa",
+      "url": "fdghfggh",
+      "categoryId": 3,
+      "description": "fghfghfh",
+      "userId": 1,
+      "created_at": "2021-09-01T18:52:35.170Z",
+      "id": 17
+    },
+    {
+      "title": "Vue3 Bootcamp",
+      "url": "aaaa",
+      "categoryId": 5,
+      "description": "sdfsdfdsf",
+      "userId": 1,
+      "created_at": "2021-09-01T18:54:42.357Z",
+      "id": 18
+    },
+    {
+      "title": "Test",
+      "url": "aaaa",
+      "categoryId": 3,
+      "description": "aaaaa",
+      "userId": 1,
+      "created_at": "2021-10-09T17:17:29.437Z",
+      "id": 19
+    },
+    {
+      "title": "Bu bir deneme",
+      "url": "deneme mi",
+      "categoryId": 3,
+      "description": "sadfdsfdsfsfsfsfs",
+      "userId": 4,
+      "created_at": "2021-10-09T18:10:09.889Z",
+      "id": 20
+    }
+  ],
+  "categories": [
+    {
+      "name": "Vue.js",
+      "id": 1
+    },
+    {
+      "name": "React.js",
+      "id": 2
+    },
+    {
+      "name": "Frontend",
+      "id": 3
+    },
+    {
+      "name": "Backend",
+      "id": 4
+    },
+    {
+      "name": "Cloud",
+      "id": 5
+    },
+    {
+      "name": "Sosyal Yaşam",
+      "id": 6
+    }
+  ]
+}
